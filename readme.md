@@ -2,7 +2,7 @@
   <content>
 # FTP Server and Client
 
-A file transportation and directory listing service. 
+A file transportation and directory listing service that was tested on a CentOS Linux release 7.2.1511. 
 This program uses a control-connection to send commands between
 the client and server, and sends data back on the port 
 specified by the client.
@@ -29,21 +29,21 @@ python ftclient.py SERVER_HOST SERVER_PORT -g  DATA_PORT
 ## Example
 
 ### In directory where ftserver is
-% ./ftserver 6089
+% ./ftserver 32137
 
 ### In directory where ftclient is
 
 #### To retreive list of all files in server directory
-% python ftclient.py localhost 6089 -l 6090
+% python ftclient.py localhost 32137 -l 26665
 	
 #### For file transporation
-% python ftclient.py localhost 6089 -g fileThatExistsInServerDirectory.txt 6090
+% python ftclient.py localhost 32137 -g fileThatExistsInServerDirectory.txt 26665
 
 #### For getting back an error message indicating file does not exist:
-% python ftclient.py localhost 6089 -g fileThatDoesntExistInServerDirectory.txt 6090
+% python ftclient.py localhost 32137 -g fileThatDoesntExistInServerDirectory.txt 26655
 
 #### For getting back a bad command message:
-% python ftclient.py localhost 6089 -NotReallyRealCommand 6090
+% python ftclient.py localhost 32137 -NotReallyRealCommand 26665
 
 
 </content>
