@@ -2,10 +2,9 @@
   <content>
 # FTP Server and Client
 
-A file transportation and directory listing service that was tested on a CentOS Linux release 7.2.1511. 
-This program uses a control-connection to send commands between
-the client and server, and sends data back on the port 
-specified by the client.
+##### This is a version of [this](https://github.com/ccmxy/FTP-Server-Client-Ubuntu) which works on a CentOS Linux release 7.2.1511 machine.    
+
+A file transportation and directory listing service. This program uses a control-connection to send commands between the client and server, and sends data back on the port specified by the client.
 
 ## Installation
 
