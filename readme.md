@@ -22,7 +22,7 @@ python ftclient.py SERVER_HOST SERVER_PORT -g FILENAME DATA_PORT
 With SERVER_PORT as the port that was specified in the command line when starting the server,
  and DATA_PORT as the port that the client will receive file data through.        
 
-To get a list of all files in the server directory:
+For a list of all files in the server directory:
 python ftclient.py SERVER_HOST SERVER_PORT -g  DATA_PORT
 
 ## Example
