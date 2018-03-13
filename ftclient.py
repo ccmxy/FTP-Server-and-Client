@@ -36,7 +36,7 @@ def runConnectionP():
         print "Error connecting to control socket!"
         print e
         sys.exit(1)
-    print "Connection p established!"
+    print "Connection p is established!"
     #send given data port to the server over control:
     print "Sending data port over connection P..."
     controlSocket.sendall(str(port_q) + "\n")

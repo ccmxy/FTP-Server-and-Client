@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 			perror("accept");
 			exit(1);
 		}
-		printf("Connection P established!\n");
+		printf("Connection P is established!\n");
 
 		// Communicate over FTP control connection.
 		status = runConnectionP(controlSocket, commandTag, &dataPort, filename);
@@ -99,7 +99,7 @@ int main(int argc, char **argv)
 				status = connect(dataSocket, (struct sockaddr *) &client_addr, sizeof(client_addr));
 			} while (status == -1);
 
-			printf("Connection Q established!\n");
+			printf("Connection Q is established!\n");
 
 			// Communicate over data connection...
 			runConnectionQ(dataSocket, commandTag, filename);
